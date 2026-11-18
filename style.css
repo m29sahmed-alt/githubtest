@@ -1,0 +1,387 @@
+/* GLOBAL STYLES */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  color: #53444B;
+  background-color: #FFF4E2;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #873A47;
+  padding: 24px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img { width: 168px; }
+
+/* BACKGROUNDS */
+.background-cream  { background-color: #FFF4E2; }
+.background-maroon { background-color: #873A47; }
+.background-gold {
+  background: linear-gradient(135deg, #D2A751 0%, #C9A04A 50%, #E0BB6E 100%);
+}
+
+/* WHITE TEXT ON DARK SECTIONS */
+.text-white,
+.text-white h1, .text-white h2, .text-white h3, .text-white p,
+.background-maroon h2, .background-maroon p { color: white; }
+
+/* FONTS */
+h1 { font-size: 78px; line-height: 100%; font-weight: 700; letter-spacing: -2px; color: #873A47; }
+h2 { font-size: 56px; line-height: 120%; font-weight: 700; letter-spacing: -1px; color: #873A47; }
+h3 { font-size: 32px; line-height: 120%; font-weight: 700; letter-spacing: -1px; color: #873A47; }
+p  { font-size: 16px; line-height: 140%; font-weight: 400; color: #53444B; }
+
+.paragraph-large {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #873A47;
+}
+
+/* NAVIGATION */
+nav li { list-style: none; padding-left: 0; }
+nav ul { display: flex; justify-content: center; gap: 50px; }
+header nav a { color: #ffffff; text-decoration: none; font-size: 14px; font-weight: bold; }
+
+/* HAMBURGER ICON: three bars, hidden on desktop and shown in the tablet and phone media queries */
+.hamburger {
+  display: none;
+  width: 32px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/* IMAGES */
+.card-img-wrap {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 200px 200px 0px 0px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img {
+  position: relative;
+  background-image: url(images/rise-coffee-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.hero-icon {
+  position: absolute;
+  width: 14%;
+  top: -16%;
+  right: 3%;
+  transform: rotate(-12deg);
+}
+
+.position-relative {
+  position: relative;
+  overflow: hidden;
+}
+
+/* BUTTONS */
+.button,
+.button-secondary {
+  display: inline-block;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button { background-color: #D2A751; }
+.button:hover { background-color: #E6C27A; }
+
+.button-secondary { background-color: #873A47; }
+.button-secondary:hover { background-color: #4A0E30; }
+
+/* IMAGE CONTAINERS */
+.about-image {
+  position: relative;
+  aspect-ratio: 1.92 / 1;
+}
+
+.about-image .img-full {
+  object-position: center 71%;
+}
+
+.about-image .about-icon {
+  position: absolute;
+  width: 38%;
+  height: auto;
+  left: -16%;
+  bottom: -45%;
+  z-index: 2;
+}
+
+/* ARCH IMAGES */
+.story-image,
+.events-image,
+.cafe-image {
+  overflow: hidden;
+  border-radius: 999px 999px 0 0;
+  aspect-ratio: 3 / 4;
+}
+
+.story-image {
+  max-width: 65%;
+  margin-left: auto;
+}
+
+/* PHOTOGRAPHS */
+.about-image img,
+.story-image img,
+.events-image img,
+.cafe-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PHOTO CROP TUNING */
+.story-image img  { object-position: 50% 50%; }
+.events-image img { object-position: 50% 50%; }
+.cafe-image img   { object-position: 50% 85%; }
+
+/* VALUES */
+.value-icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+.value-icon + h3 { font-size: 22px; }
+.col-lg-4 > .value-icon ~ p { border-bottom: 3px solid #D2A751; padding-bottom: 16px; }
+
+/* TESTIMONIAL ICON */
+.background-maroon img { width: 60px; }
+
+/* FOOTER */
+footer { background-color: #4A0E30; }
+footer, footer h2, footer p, footer li, footer a { color: #ffffff; }
+footer img { height: 40px; }
+footer h2 { font-size: 20px; }
+footer p, footer li, footer a { font-size: 12px; list-style: none; }
+footer ul { padding: 0; }
+
+/* CONTACT PAGE */
+
+/* Smaller heading for location, hours and "have a question?" */
+.heading-small {
+  font-size: 32px;
+  line-height: 120%;
+  margin: 0 0 12px;
+}
+
+/* PAGE LAYOUT (FLEXBOX): info column + form column */
+.contact-layout {
+  display: flex;
+  flex-wrap: wrap;          /* columns stack on their own when there isn't room for both */
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.contact-info      { flex: 1 1 200px; }
+.contact-form-wrap { flex: 2 1 420px; }
+
+/* HOURS LIST */
+.hours-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hours-list li {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+/* CONTACT FORM (GRID) */
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field-full {
+  grid-column: span 2;      /* message spans the full form width */
+}
+
+.contact-form label {
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #53444B;
+  background-color: #ffffff;
+  border: none;
+}
+
+/* TESTIMONIAL TEXT */
+.testimonial-quote {
+  font-family: "Space Mono", monospace;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.testimonial-name {
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* FOOTER LAYOUT (FLEXBOX) */
+.footer-layout {
+  display: flex;
+  flex-wrap: wrap;          /* brand and columns stack when the footer gets narrow */
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* logo at the top, legal links at the bottom */
+  gap: 40px;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 12px;
+  font-size: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.footer-columns h2 {
+  font-size: 24px;
+}
+
+.footer-contact-item {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.footer-hours li {
+  line-height: 150%;
+}
+
+
+/* HOME PAGE */
+.hero-section { padding-top: 84px; }
+
+/* card titles are small in the design (h3 for heading order, sized down) */
+.card-border h3 { font-size: 22px; margin: 20px 0 8px; }
+
+/* visit us: location and hours headings sit between h2 and body text in size */
+.visit-info h3 { font-size: 22px; margin: 24px 0 8px; }
+.visit-info .button-secondary { margin-top: 24px; }
+
+/* MEDIA QUERIES (overrides, so they stay at the bottom) */
+
+/* SMARTPHONE */
+@media screen and (max-width: 480px) {
+
+  /* header: menu and button out, hamburger in, smaller header and logo */
+  header { padding: 16px 6%; }
+  header img { width: 104px; }
+  header nav,
+  header .button { display: none; }
+  .hamburger { display: flex; }
+
+  /* type scaled down to fit a phone screen */
+  h1 { font-size: 44px; letter-spacing: -1px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 24px; }
+  .heading-small { font-size: 24px; }
+  .paragraph-large { font-size: 28px; }
+  .testimonial-quote { font-size: 20px; }
+
+  /* about page images */
+  .about-image .about-icon {
+    width: 30%;
+    left: -6%;
+    bottom: -30%;
+  }
+
+  .story-image {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  /* contact form: one column, message field no longer needs to span two */
+  .contact-form { grid-template-columns: 1fr; }
+  .form-field-full { grid-column: span 1; }
+
+  /* flexbox sections stack in one column (the flex basis was a width, so reset it) */
+  .contact-layout,
+  .footer-layout,
+  .footer-columns { flex-direction: column; }
+  .contact-info,
+  .contact-form-wrap { flex: 0 0 auto; }
+  .footer-columns { gap: 32px; }
+
+  /* home page: shorter hero image, tighter top, smaller icon */
+  .hero-section { padding-top: 40px; }
+  .hero-img { height: 340px; }
+  .hero-icon { width: 22%; top: -10%; right: 4%; }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+  /* header: menu and button out, hamburger in */
+  header nav,
+  header .button { display: none; }
+  .hamburger { display: flex; }
+
+  h1 { font-size: 60px; letter-spacing: -1px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 28px; }
+  .paragraph-large { font-size: 32px; }
+  .testimonial-quote { font-size: 26px; }
+
+  /* home page: shorter hero image */
+  .hero-img { height: 440px; }
+}

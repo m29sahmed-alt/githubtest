@@ -1,0 +1,85 @@
+/* CONTAINER */
+
+.container {
+	display: block;
+	width: 88%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.container-full {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* ROW */
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0px -20px;
+}
+
+.row-justify-end     { justify-content: flex-end; }
+.row-justify-center  { justify-content: center; }
+.row-justify-between { justify-content: space-between; }
+
+.row-align-end       { align-items: flex-end; }
+.row-align-center    { align-items: center; }
+
+/* COLUMNS */
+
+.col {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	padding: 0px 20px;
+}
+
+/* flex: 0 0 [percentage] = don't grow, don't shrink, hold this exact width */
+.col-lg-1  { flex: 0 0 8.3333%; }
+.col-lg-2  { flex: 0 0 16.6667%; }
+.col-lg-3  { flex: 0 0 25%; }
+.col-lg-4  { flex: 0 0 33.3333%; }
+.col-lg-5  { flex: 0 0 41.6667%; }
+.col-lg-6  { flex: 0 0 50%; }
+.col-lg-7  { flex: 0 0 58.3333%; }
+.col-lg-8  { flex: 0 0 66.6667%; }
+.col-lg-9  { flex: 0 0 75%; }
+.col-lg-10 { flex: 0 0 83.3333%; }
+.col-lg-11 { flex: 0 0 91.6667%; }
+.col-lg-12 { flex: 0 0 100%; }
+
+/* UTILITIES */
+
+.section-padding { padding: 84px 0px; }
+.text-center     { text-align: center; }
+.text-right      { text-align: right; }
+.img-full        { display: block; width: 100%; }
+
+/* MEDIA QUERIES (overrides, so they stay at the bottom) */
+
+/* SMARTPHONE */
+@media screen and (max-width: 480px) {
+
+	/* stacked columns need space between them */
+	.row { row-gap: 32px; }
+
+	.section-padding { padding: 56px 0px; }
+
+	/* small-screen columns: 12 = full width, stacked */
+	.col-sm-1  { flex: 0 0 8.3333%; }
+	.col-sm-2  { flex: 0 0 16.6667%; }
+	.col-sm-3  { flex: 0 0 25%; }
+	.col-sm-4  { flex: 0 0 33.3333%; }
+	.col-sm-5  { flex: 0 0 41.6667%; }
+	.col-sm-6  { flex: 0 0 50%; }
+	.col-sm-7  { flex: 0 0 58.3333%; }
+	.col-sm-8  { flex: 0 0 66.6667%; }
+	.col-sm-9  { flex: 0 0 75%; }
+	.col-sm-10 { flex: 0 0 83.3333%; }
+	.col-sm-11 { flex: 0 0 91.6667%; }
+	.col-sm-12 { flex: 0 0 100%; }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact | Rise Coffee</title>
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="layout.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html"><img src="images/rise-logo.svg" alt="Rise Coffee Logo"></a>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<a href="index.html#visit" class="button">Visit Us</a>
+
+		<!-- HAMBURGER (shown at tablet and phone widths, built from three divs) -->
+		<div class="hamburger">
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- CONTACT US -->
+		<section class="section-padding background-cream">
+			<div class="container">
+
+				<div class="row">
+					<div class="col col-lg-12 text-center">
+						<h1>contact us</h1>
+					</div>
+				</div><!-- row ends -->
+
+				<!-- flexbox: info column + form column -->
+				<div class="contact-layout">
+
+					<!-- LOCATION AND HOURS -->
+					<div class="contact-info">
+						<h2 class="heading-small">location</h2>
+						<p>304 Main St<br>Wellington, ON  K0K 3L0</p>
+
+						<h2 class="heading-small">hours</h2>
+						<ul class="hours-list">
+							<li>Monday <strong>7am - 5pm</strong></li>
+							<li>Tuesday <strong>7am - 5pm</strong></li>
+							<li>Wednesday <strong>7am - 5pm</strong></li>
+							<li>Thursday <strong>7am - 7pm</strong></li>
+							<li>Friday <strong>7am - 5pm</strong></li>
+							<li>Saturday <strong>9am - 5pm</strong></li>
+							<li>Sunday <strong>9am - 3pm</strong></li>
+						</ul>
+					</div>
+
+					<!-- FORM (grid) -->
+					<div class="contact-form-wrap">
+						<h2 class="heading-small">have a question?</h2>
+
+						<form class="contact-form" action="#" method="post">
+
+							<div class="form-field">
+								<label for="first-name">First Name</label>
+								<input type="text" id="first-name" name="first-name" disabled>
+							</div>
+
+							<div class="form-field">
+								<label for="last-name">Last Name</label>
+								<input type="text" id="last-name" name="last-name" disabled>
+							</div>
+
+							<div class="form-field">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" disabled>
+							</div>
+
+							<div class="form-field">
+								<label for="phone">Phone</label>
+								<input type="tel" id="phone" name="phone" disabled>
+							</div>
+
+							<div class="form-field form-field-full">
+								<label for="message">Message</label>
+								<textarea id="message" name="message" rows="8" disabled></textarea>
+							</div>
+
+						</form>
+					</div>
+
+				</div><!-- contact-layout ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+		<!-- MAP -->
+		<div class="container-full">
+			<img class="img-full" src="images/map.jpg" alt="Map showing Rise Coffee House on Main St, Wellington">
+		</div>
+
+		<!-- TESTIMONIAL -->
+		<section class="section-padding background-maroon text-white">
+
+			<div class="container">
+
+				<div class="row row-justify-center">
+
+					<div class="col col-lg-10 col-sm-12 text-center">
+						<img src="images/rise-icon-2.svg" alt="">
+
+						<h2>what our regulars are saying...</h2>
+
+						<p class="testimonial-quote">“Friendly staff and amazing pastries. Highly recommend.”</p>
+
+						<p class="testimonial-name">— Leah T.</p>
+					</div>
+
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+
+		</section>
+
+	</main>
+
+
+	<!-- FOOTER -->
+	<footer class="section-padding">
+
+		<div class="container">
+
+			<!-- flexbox: brand on the left, contact + hours on the right -->
+			<div class="footer-layout">
+
+				<!-- BRAND -->
+				<div class="footer-brand">
+					<a href="index.html">
+						<img src="images/rise-logo.svg" alt="Rise Coffee logo">
+					</a>
+
+					<div class="footer-legal">
+						<span>© 2026 Rise Coffee</span>
+						<span>Privacy Policy</span>
+						<span>Terms</span>
+					</div>
+				</div>
+
+				<div class="footer-columns">
+
+					<!-- GET IN TOUCH -->
+					<div>
+						<h2>Get in Touch</h2>
+
+						<div class="footer-contact-item">780-939-5224</div>
+						<div class="footer-contact-item">hello@risecoffee.com</div>
+						<div class="footer-contact-item">304 Main St<br>Wellington, ON  K0K 3L0</div>
+					</div>
+
+					<!-- HOURS -->
+					<div>
+						<h2>Hours</h2>
+
+						<ul class="footer-hours">
+							<li>Monday <strong>7am - 5pm</strong></li>
+							<li>Tuesday <strong>7am - 5pm</strong></li>
+							<li>Wednesday <strong>7am - 5pm</strong></li>
+							<li>Thursday <strong>7am - 7pm</strong></li>
+							<li>Friday <strong>7am - 5pm</strong></li>
+							<li>Saturday <strong>9am - 5pm</strong></li>
+							<li>Sunday <strong>9am - 3pm</strong></li>
+						</ul>
+					</div>
+
+				</div><!-- footer-columns ends -->
+
+			</div><!-- footer-layout ends -->
+
+		</div><!-- container ends -->
+	</footer>
+
+</body>
+</html>

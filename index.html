@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home | Rise Coffee</title>
+
+	<!-- STYLES: normalize first, then layout, then style -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="layout.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html"><img src="images/rise-logo.svg" alt="Rise Coffee Logo"></a>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<a href="#visit" class="button">Visit Us</a>
+
+		<!-- HAMBURGER (shown at tablet and phone widths, built from three divs) -->
+		<div class="hamburger">
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+			<div class="hamburger-bar"></div>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- HERO -->
+		<section class="hero-section background-cream">
+			<div class="container-full">
+
+				<div class="row row-justify-center">
+					<div class="col col-lg-8 col-sm-12 text-center">
+						<h1>the lift you’ve been looking for</h1>
+					</div>
+				</div><!-- row ends -->
+
+				<div class="row">
+					<div class="col col-lg-12">
+						<!-- background image, so the description lives in aria-label instead of alt -->
+						<div class="hero-img" role="img" aria-label="Coffee and pastries on a table">
+							<img src="images/rise-icon-1.svg" class="hero-icon" alt="">
+						</div>
+					</div>
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+		<!-- FAVOURITE CUP -->
+		<section class="section-padding background-gold">
+			<div class="container">
+				<div class="row row-justify-center">
+					<div class="col col-lg-10 col-sm-12 text-center">
+						<p class="paragraph-large">We believe coffee is more than a drink — it’s a ritual. Come discover your new favorite cup.</p>
+						<a class="button-secondary" href="#visit">Visit Us</a>
+					</div>
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+		<!-- WHAT WE'RE KNOWN FOR -->
+		<section class="section-padding background-cream">
+			<div class="container">
+
+				<div class="row">
+					<div class="col col-lg-12">
+						<h2 class="text-center">what we’re known for</h2>
+					</div>
+				</div><!-- row ends -->
+
+				<div class="row">
+
+					<!-- CARD 1 -->
+					<div class="col col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img-wrap">
+								<img src="images/rise-coffee-4.jpg" class="card-img" alt="Roasted coffee beans">
+							</div>
+							<div class="card-border">
+								<h3>small-batch roasts</h3>
+								<p>We source our beans from sustainable farms and roast them fresh in-house.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARD 2 -->
+					<div class="col col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img-wrap">
+								<img src="images/rise-coffee-5.jpg" class="card-img" alt="A tray of fresh pastries">
+							</div>
+							<div class="card-border">
+								<h3>fresh pastries</h3>
+								<p>Pair your coffee with handmade croissants, muffins, and more.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARD 3 -->
+					<div class="col col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="card-img-wrap">
+								<img src="images/rise-coffee-2.jpg" class="card-img" alt="The cafe seating area">
+							</div>
+							<div class="card-border">
+								<h3>homey vibes</h3>
+								<p>Whether you’re studying, catching up, or just relaxing, our space is your space.</p>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+		<!-- VISIT US -->
+		<section id="visit" class="section-padding background-gold">
+			<div class="container">
+
+				<div class="row row-align-center">
+
+					<!-- DETAILS -->
+					<div class="col col-lg-5 col-sm-12 visit-info">
+						<h2>visit us</h2>
+
+						<h3>location</h3>
+						<p>304 Main St<br>Wellington, ON  K0K 3L0</p>
+
+						<h3>hours</h3>
+						<ul class="hours-list">
+							<li>Monday <strong>7am - 5pm</strong></li>
+							<li>Tuesday <strong>7am - 5pm</strong></li>
+							<li>Wednesday <strong>7am - 5pm</strong></li>
+							<li>Thursday <strong>7am - 7pm</strong></li>
+							<li>Friday <strong>7am - 5pm</strong></li>
+							<li>Saturday <strong>9am - 5pm</strong></li>
+							<li>Sunday <strong>9am - 3pm</strong></li>
+						</ul>
+
+						<a href="contact.html" class="button-secondary">Get in Touch</a>
+					</div>
+
+					<!-- MAP -->
+					<div class="col col-lg-7 col-sm-12">
+						<img src="images/map.jpg" class="img-full" alt="Map showing the location of Rise Coffee">
+					</div>
+
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+		<!-- TESTIMONIAL -->
+		<section class="section-padding background-maroon text-white">
+			<div class="container">
+
+				<div class="row row-justify-center">
+					<div class="col col-lg-10 col-sm-12 text-center">
+						<img src="images/rise-icon-2.svg" alt="">
+
+						<h2>what our regulars are saying...</h2>
+
+						<p class="testimonial-quote">“The best latte I’ve had in the city. Period.”</p>
+
+						<p class="testimonial-name">— Sarah J.</p>
+					</div>
+				</div><!-- row ends -->
+
+			</div><!-- container ends -->
+		</section>
+
+	</main>
+
+
+	<!-- FOOTER -->
+	<footer class="section-padding">
+
+		<div class="container">
+
+			<!-- flexbox: brand on the left, contact + hours on the right -->
+			<div class="footer-layout">
+
+				<!-- BRAND -->
+				<div class="footer-brand">
+					<a href="index.html">
+						<img src="images/rise-logo.svg" alt="Rise Coffee logo">
+					</a>
+
+					<div class="footer-legal">
+						<span>© 2026 Rise Coffee</span>
+						<span>Privacy Policy</span>
+						<span>Terms</span>
+					</div>
+				</div>
+
+				<div class="footer-columns">
+
+					<!-- GET IN TOUCH -->
+					<div>
+						<h2>Get in Touch</h2>
+
+						<div class="footer-contact-item">780-939-5224</div>
+						<div class="footer-contact-item">hello@risecoffee.com</div>
+						<div class="footer-contact-item">304 Main St<br>Wellington, ON  K0K 3L0</div>
+					</div>
+
+					<!-- HOURS -->
+					<div>
+						<h2>Hours</h2>
+
+						<ul class="footer-hours">
+							<li>Monday <strong>7am - 5pm</strong></li>
+							<li>Tuesday <strong>7am - 5pm</strong></li>
+							<li>Wednesday <strong>7am - 5pm</strong></li>
+							<li>Thursday <strong>7am - 7pm</strong></li>
+							<li>Friday <strong>7am - 5pm</strong></li>
+							<li>Saturday <strong>9am - 5pm</strong></li>
+							<li>Sunday <strong>9am - 3pm</strong></li>
+						</ul>
+					</div>
+
+				</div><!-- footer-columns ends -->
+
+			</div><!-- footer-layout ends -->
+
+		</div><!-- container ends -->
+	</footer>
+
+</body>
+</html>
